@@ -213,3 +213,74 @@ textarea {
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 1080px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    body {
+        background-image: url(../assets/iphone_contact.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30%;
+    }
+    .contact-box {
+        width: 350px;
+        height: 450px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .innerContact {
+        padding-left: 10px;
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .inputText {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inputText input {
+        width: 120px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .inputText textarea {
+        width: 260px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .email input {
+        width: 260px;
+        height: 25px;
+    }
+
+    .message textarea {
+        width: 260px;
+        height: 100px;
+    }
+
+    .submit button {
+        width: 60px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
