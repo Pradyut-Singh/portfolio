@@ -32,5 +32,5 @@ function sendEmail() {
 }
 
 function returnToHome() {
-    window.location.href = '/html/index.html';
+    window.location.href = 'index.html';
 }
