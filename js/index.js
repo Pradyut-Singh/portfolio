@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             document.querySelector('body').insertAdjacentHTML('afterbegin', data);
 
-            const currentLocation = window.location.pathname; 
-            const navLinks = document.querySelectorAll('.navbar a');
+            const currentLocation = window.location.pathname.split("/").pop(); 
+            const navLinks = document.querySelectorAll('.links a');
             
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentLocation) {
+                const linkHref = link.getAttribute('href').split("/").pop();
+                if (linkHref === currentLocation) {
                     link.classList.add('isactive');
                 }
             });
