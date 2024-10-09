@@ -209,7 +209,7 @@ body {
 
     .name {
         margin-left: 2.5rem;
-        margin-top: 80%;
+        margin-top: 50%;
     }
 
     .firstName {
@@ -238,7 +238,7 @@ body {
 
     .socials {
         width: 100%;
-        margin-left: -10rem;
+        margin-left: -9.5rem;
         margin-bottom: 2.5rem;
     }
 
