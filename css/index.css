@@ -216,11 +216,13 @@ body {
         font-size: 2rem;
         text-align: start;
         margin-bottom: 1.5rem;
+        font-weight: normal;
     }
 
     .lastName {
         font-size: 3rem;
         text-align: start;
+        font-weight: normal;
     }
 
     .work {
