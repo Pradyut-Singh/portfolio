@@ -215,6 +215,7 @@ body {
     .firstName {
         font-size: 2rem;
         text-align: start;
+        margin-bottom: 1.5rem;
     }
 
     .lastName {
@@ -237,7 +238,7 @@ body {
 
     .socials {
         width: 100%;
-        margin-left: -9rem;
+        margin-left: -10rem;
         margin-bottom: 2.5rem;
     }
 
