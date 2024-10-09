@@ -10,11 +10,6 @@ function sendEmail() {
         return;
     }
 
-    if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
     let templateParams = {
         name: fullName,
         message: msg
