@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <div class="contact-box">
+                <h1>Contact Me</h1>
+                <div class="innerContact">
+                    <h3>Full Name</h3>
+                    <div class="inputText">
+                        <div class="firstName">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <p>First Name</p>
+                        </div>
+                        <div class="lastName">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <p>Last Name</p>
+                        </div>
+                    </div>
+                    <h3>E-mail</h3>
+                    <div class="inputText">
+                        <div class="email">
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <h3>Message</h3>
+                    <div class="inputText">
+                        <div class="message">
+                            <textarea name="message" id="messageToSend"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="button" onclick="sendEmail()">Submit </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "xWKc1LqS1mTTd8YiJ",
+        });
+    })();
+    </script>
+    <script src="/js/email.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

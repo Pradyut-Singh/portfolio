@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(../assets/skills.png);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src: url(../fonts/ArchivoBlack-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AverageSans';
+    src: url(../fonts/AverageSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'ArchivoBlack';
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'AverageSans';
+    color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: large;
+}
+
+li {
+    color: white;
+}
+
+.publications p {
+    padding-left: 30px;
+    font-family: 'AverageSans';
+    color: white;
+    padding-bottom: 20px;
+}
+
+.projects p {
+    padding-left: 30px;
+    font-family: 'AverageSans';
+    color: white;
+    padding-bottom: 20px;
+}
+
+.main {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.left {
+    padding-left: 4rem;
+    width: 50%;
+    height: 600px;
+}
+
+.right {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.programming img {
+    width: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.publications {
+    width: 700px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 30px;
+}
+
+
+.progressBar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 350px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 5px;
+    background-color: white;
+    width: 0;
+    margin-left: 25px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -.5rem;
+}
+
+.read {
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+}
+.read h4 {
+    font-family: 'AverageSans';
+    color: white;
+}
+
+.read a {
+    text-decoration: none;
+    color: white;
+}
+
+.box {
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(../assets/iphone_skills.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .main {
+        /* margin-top: 20%; */
+        flex-direction: column;
+        align-items: start;
+        margin-left: 1rem;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .programming, .publications, .projects {
+        width: 100%;
+    }
+
+    .progressBar {
+        width: 250px;
+    }
+
+    .publications {
+        width: 250px;
+    }
+
+    .projects {
+        width: 250px;
+    }
+
+    .left {
+        width: 250px;
+        height: 100%;
+        padding-left: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .left h1{
+        padding-top: 2rem;
+    }
+
+    .right {
+        width: 250px;
+        margin-left: 2.5rem;
+    }
+
+    .box {
+        margin-bottom: 4rem;
+    }
+}

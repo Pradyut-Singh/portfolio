@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(../assets/about.png);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src: url(../fonts/ArchivoBlack-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url(../fonts/Alegreya-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    margin-left: 9rem;
+}
+
+.main.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.heading h1{
+    font-family: 'ArchivoBlack';
+    font-size: 3rem;
+    color: white;
+    margin-top: 2rem;
+    margin-top: 4%;
+    text-decoration: underline;
+}
+
+.heading p {
+    font-family: 'Alegreya';
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.2rem;
+}
+
+.paragraph {
+    margin-top: 4%;
+    width: 90%;
+}
+
+.paragraph p {
+    font-family: 'Alegreya';
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(../assets/iphone_about.png);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .main {
+        margin-left: 2.5rem;
+    }
+
+    .paragraph {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'AverageSans';
+    src: url(../fonts/AverageSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alata';
+    src: url(../fonts/Alata-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AoboshiOne';
+    src: url(../fonts/AoboshiOne-Regular.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src: url(../fonts/ArchivoBlack-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AbyssinicaSIL';
+    src: url(../fonts/AbyssinicaSIL-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../assets/index.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.main.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.sub.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.name {
+    margin-left: 9rem;
+    margin-top: 8%;
+}
+
+.firstName {
+    font-family: 'AoboshiOne';
+    font-size: 2.24rem;
+    color: white;
+    font-weight: lighter;
+    text-align: start;
+}
+
+.lastName {
+    font-family: 'ArchivoBlack';
+    font-size: 3.3rem;
+    color: white;
+    font-weight: normal;
+    text-align: start;
+    margin-top: -26px;
+    margin-left: -8px;
+}
+
+.work {
+    font-family: 'AbyssinicaSIL';
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 8px;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+.resume {
+    margin-top: 2rem;
+    margin-left: 9rem;
+    width: 150px;
+    height: 40px;
+}
+
+.resume h4 {
+    font-family: 'AverageSans';
+    color: white;
+}
+
+.box {
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume a{
+    text-decoration: none;
+    color: white;
+}
+
+.box img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.sub {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: none;
+    margin-bottom: 4%;
+    margin-left: 9rem;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-image: url(../assets/iphone_index.png);
+        background-size: cover;
+    }
+
+    .name {
+        margin-left: 2.5rem;
+        margin-top: 80%;
+    }
+
+    .firstName {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    .lastName {
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    .work {
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .resume {
+        margin-left: 2.5rem;
+    }
+
+    .resume h4 {
+        font-size: 1rem;
+    }
+
+    .socials {
+        width: 100%;
+        margin-left: -8.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .socials img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 1080px) {
+    body{
+        background-image: url(../assets/iphone_index.png);
+        background-size: cover;
+    }
+
+    .name {
+        margin-left: 2.5rem;
+        margin-top: 80%;
+    }
+
+    .firstName {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    .lastName {
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    .work {
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .resume {
+        margin-left: 2.5rem;
+    }
+
+    .resume h4 {
+        font-size: 1rem;
+    }
+
+    .socials {
+        width: 100%;
+        margin-left: -8.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .socials img {
+        width: 40px;
+    }
+}

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'AoboshiOne';
+    src: url(../fonts/AoboshiOne-Regular.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../assets/contact.png);
+    background-size: cover;
+}
+
+.main {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-box {
+    width: 620px;
+    height: 650px;
+    color: white;
+    background-color: none;
+    border-radius: 45px;
+    border: 3px solid white;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-family: 'Arial';
+}
+
+.contact-box h1 {
+    margin-bottom: 20px;
+}
+
+.innerContact {
+    padding-left: 20px;
+    width: 520px;
+}
+
+.inputText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input {
+    padding-left: 20px;
+    color: white;
+    font-family: 'AoboshiOne';
+}
+
+.inputText input {
+    width: 200px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    margin-bottom: 8px;
+}
+
+.firstName p {
+    margin-top: 3px;
+    margin-left: 14px;
+}
+
+.lastName p {
+    margin-top: 3px;
+    margin-left: 14px;
+}
+
+.email input {
+    width: 460px;
+    height: 45px;
+}
+
+textarea {
+    padding-left: 20px;
+    color: white;
+    font-family: 'AoboshiOne';
+}
+
+.inputText textarea {
+    width: 180px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    margin-bottom: 8px;
+    padding: 20px;
+}
+
+.message textarea {
+    width: 460px;
+    height: 180px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit button {
+    width: 80px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 14px;
+    background-color: white;
+    font-family: 'AoboshiOne';
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    body {
+        background-image: url(../assets/iphone_contact.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+    }
+    .contact-box {
+        width: 350px;
+        height: 450px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .innerContact {
+        padding-left: 10px;
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .inputText {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inputText input {
+        width: 120px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .inputText textarea {
+        width: 260px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .email input {
+        width: 260px;
+        height: 25px;
+    }
+
+    .message textarea {
+        width: 260px;
+        height: 100px;
+    }
+
+    .submit button {
+        width: 60px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
